@@ -1,8 +1,11 @@
-body{
+body
+{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     margin: 0;
     width: 100%;
+    user-select: none;
+    overflow-x: hidden;
 }
 #right
 {
@@ -14,26 +17,66 @@ body{
 }
 .QA
 {
-    width: 60%;
-    border: 2px dotted red;
-    margin-top: 1vh;
-    padding: 2vw;
+    width: 40%;
+    height: 300px;
+    background-color: #E2E4F6;
+    margin-top: 5vh;
     transform: translate(-50%, 0%);
     margin-left: 50%;
+    display: inline-block;
+    transition: all 1s;
+}
+.QA:hover
+{
+    background-color: #b9bff0;
 }
 .QA a
 {
     color: black;
     text-decoration: none;
-    border: 2px dotted red;
 }
-.other-part
+.normalTXT
 {
-    width: 300px;
-    height: 300px;
-    border: 2px dotted red;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    padding: 20px;
+    width: 50%;
+    float: left;
+}
+.credits
+{
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    padding: 20px;
+    width: 50%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: medium;
+}
+.QA h2{
+    font-weight: normal;
+    font-size: xx-large;
+}
+.QA p
+{
+    font-size: large;
+    font-weight: lighter;
 }
 .parent-img2
+{
+    width: 40%;
+    height: 100%;
+    margin-top: 0px;
+    background: url('noimg.jpg');
+    background-position: 50%, 50%;
+    background-size: cover;
+    color: transparent;
+    float: left;
+}
+.parent-img
 {
     width: 30vw;
     height: 300px;
@@ -41,112 +84,171 @@ body{
     background: url('noimg.jpg');
     background-position: 50%, 50%;
     background-size: cover;
-    border: 2px dotted red;
     color: transparent;
 }
-.parent-img
+.box
 {
-    width: 30vw;
     height: 300px;
-            margin-top: 0px;
-            background: url('noimg.jpg');
-            background-position: 50%, 50%;
-            background-size: cover;
-            border: 2px dotted red;
-            color: transparent;
-        }
-        .box
-        {
-            height: 50vh;
-            margin-top: 1vh;
-            padding-right: 10vw;
-            padding-left: 10vw;
-            padding-top: 5vh;
-            padding-bottom: 5vh;
-            background-color: white;
-            border: 2px dotted red;
-        }
-        .box button
-        {
-            background-color: transparent;
-            padding: 15px;
-            width: 15vw;
-            border: 2px solid #3AAFB9;
-        }                        
-        .box h1 
-        {
-            text-align: left;
-            width: 40vw;
-            border: 2px dotted red;
-        }
-        .box p
-        {
-            font-size: large;
-            width: 40vw;
-            border: 2px dotted red;
-            font-size: -60%;
-        }
+    margin-top: 50px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+.box button
+{
+    background-color: transparent;
+    padding: 15px;
+    width: 15%;
+    border: 2px solid #3AAFB9;
+    transition: all .5s;
+    cursor: pointer;
+}
+.box button:hover
+{
+    transform: scale(1.1);
+}
+button
+{
+    cursor: pointer;
+}
+.box h1 
+{
+    text-align: left;
+    width: 40vw;
+}
+.box p
+{
+    font-size: large;
+    width: 40vw;
+    font-size: -60%;
+}
+#ColorBox
+{
+    background-color: #197BBD;
+    color: white;
+}
+#ColorBox2
+{
+    background-color: #e15554;
+    color: white;
+}
+#ColorBox2 button
+{
+    color: white;
+    font-size: large;
+    border: 2px solid white;
+    transition: all .5s;
+}
+#ColorBox button
+{
+    color: white;
+    font-size: large;
+    border: 2px solid white;
+    transition: all .5s;
+}
+#ColorBox2 button:hover
+{
+    transform: scale(1.1);
+}
+#Ulbar 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4d9de0; /*vh*/
+  transition: all .5s;
+}
 
-        #Ulbar 
-        {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #467599;
-          height: 50px;
-        }
+.NavBar 
+{
+  float: right;
+  margin-right: 10px;
+}
+#PsykiskHelse
+{
+    float: left;
+}
+#Ulbar li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: all .5s;
 
-        .NavBar 
-        {
-          float: right;
-          margin-right: 10px;
-        }
-        #PsykiskHelse{
-            float: left;
-        }
+}
 
-        #Ulbar li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 15px 30px;
-          text-decoration: none;
-        }
-
-        #Ulbar li a:hover {
-          background-color: #1D3354;
-        }
-        footer
-        {
-            width: 100%;
-            height: 100vh;
-            background-color: #001011;
-            padding-top: 3vh;
-            margin-top: 3vh;
-        }
-        .footerSEC
-        {
-            color: white;
-            background-color: #001011;
-            font-family: Arial, Helvetica, sans-serif;
-            float: left;
-            margin-left: 5vw;
-            font-size: x-large;
-        }
-        .footerUL
-        {
-            text-align: left;
-            list-style-type: none;
-            margin-left: 10px;
-            float: left;
-    }
-    .footerUL li a
+#Ulbar li a:hover {
+  background-color: #1D3354;
+}
+footer
+{
+    width: 100%;
+    height: 800px;
+    background-color: #001011;
+    padding-top: 3vh;
+    margin-top: 10vh;
+}
+.footerSEC
+{
+    color: white;
+    background-color: #001011;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    margin-left: 5vw;
+    font-size: x-large;
+}
+.footerUL
+{
+    text-align: left;
+    list-style-type: none;
+    margin-left: 10px;
+    float: left;
+}
+.footerUL li a
+{
+    text-decoration: none;
+    color: white;
+}
+.footerUL li a:hover
+{
+    color: rgb(79, 119, 252);
+}
+#container 
+{
+    width: 100%;
+    height: 1080px;
+    border-bottom: 2px solid white;
+}
+@media only screen and (max-width: 750px) {
+    .box button
     {
-        text-decoration: none;
-        color: white;
-    }
-    .footerUL li a:hover
+        width: 30%;
+    } 
+    .box p
     {
-        color: rgb(79, 119, 252);
+      font-size:small;
     }
+}
+@media only screen and (max-width: 1250px){
+    .QA
+    {
+        width: 80%;
+    }
+    .QA p
+    {
+        font-size:small;
+        float: left;
+        width: 50%;
+    }
+    .QA h1
+    {
+        font-size: medium;
+        float: left;
+        width: 50%;
+    }
+}
